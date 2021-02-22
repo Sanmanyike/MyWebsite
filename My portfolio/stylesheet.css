@@ -1,0 +1,118 @@
+/*Apply to all style*/
+*{
+    font-family: 'Oxygen', sans-serif;
+}
+/*Main page style*/
+.section{
+    background-image: url(../includes/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 100%;
+    background-attachment: fixed;
+}
+a{
+    color: rgb(0, 0, 0) !important;
+}
+a:hover{
+    text-decoration: none;
+    color: honeydew;
+    background-color: rgb(130, 205, 252) !important;
+}
+.jumbotron{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    opacity: 0.7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.profilepic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 1;
+}
+hr{
+    background-color: honeydew;
+    opacity: 0.2;
+    height: 5px !important;
+    border-radius: 50px;
+}
+.align-self-center{
+    text-align: center;
+}
+.btn-info{
+    background-color: #1A5276;
+    width: 150px;
+    border-radius: 50px;
+    border: none;
+}
+.list-inline-item{
+    padding-left:  15px;
+}
+
+.section-one{
+    width: auto;
+    height: 100%;
+    background-color: lightgrey;
+    text-align: center;
+}
+/*My portfolio style*/
+.section-two{
+    width: auto;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 50px;
+    background-color: black;
+    opacity: 0.7;
+}
+.section-two-content{
+    padding-bottom: 50px;
+}
+/*Card-images and card style*/
+.card-img-top{
+    height: 200px;
+    border-top-left-radius: 50px ;
+    border-top-right-radius: 50px ;
+}
+.card{
+    width: auto;
+    height: 500px;
+    margin-bottom: 100px;
+    border-radius: 50px;
+    border-color: #1A5276 !important;
+}
+.card-btn{
+    margin-bottom: 50px !important;
+}
+/*Footer style*/
+.footer{
+    background-image: url(../includes/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+    background-attachment: fixed;
+}
+.enquiry{
+    height: 500px;
+    background-color: black;
+    opacity: 0.8;
+}
+.copyrights{
+    height: 100px;
+    background-color: black;
+    opacity: 1;
+}
+/*sign-in sign-up style*/
+.register{
+    padding: 0;
+}
+.login{
+    background-color: lightgrey;
+    width: auto;
+    height: 800px;
+}
