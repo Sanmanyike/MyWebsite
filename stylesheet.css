@@ -4,7 +4,7 @@
 }
 /*Main page style*/
 .section{
-    background-image: url(../includes/background.jpg);
+    background-image: url(includes/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
@@ -89,7 +89,7 @@ hr{
 }
 /*Footer style*/
 .footer{
-    background-image: url(../includes/footer.jpg);
+    background-image: url(includes/footer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
