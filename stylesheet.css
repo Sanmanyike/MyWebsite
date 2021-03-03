@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     padding: 0;
     height: 100%;
+    width: auto;
     background-attachment: fixed;
 }
 a{
@@ -32,13 +33,17 @@ a:hover{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 1 !important;
+    border: 1px solid #1A5276;
 }
 hr{
     background-color: honeydew;
     opacity: 0.2;
     height: 5px !important;
     border-radius: 50px;
+}
+.pricing-hr{
+    background-color: #1A5276;
 }
 .align-self-center{
     text-align: center;
@@ -49,10 +54,6 @@ hr{
     border-radius: 50px;
     border: none;
 }
-.list-inline-item{
-    padding-left:  15px;
-}
-
 .section-one{
     width: auto;
     height: 100%;
@@ -63,10 +64,24 @@ hr{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.about-img{
+    width: 150px;
+    height: 150px;
+}
+.about-card{
+    box-shadow: 2px 5px 10px black;
+    margin-bottom: 100px;
+}
+.heading{
+    color: #58595B;
+}
 .about-u{
     margin-bottom: 70px;
     margin-top: 0;
-    color: #1A5276;
+    background-color: #1A5276;
+}
+.u-card{
+    background-color: lightgrey;
 }
 .p-card{
     border-top: 5px solid #1A5276;
@@ -108,16 +123,19 @@ hr{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    width: auto;
     padding: 0;
-    font-family: 'Oxygen', sans-serif;
+    margin: 0;
     background-attachment: fixed;
 }
 .enquiry{
+    width: auto;
     height: 500px;
     background-color: black;
     opacity: 0.8;
 }
 .copyrights{
+    width: cover;
     height: 100px;
     background-color: black;
     opacity: 1;
