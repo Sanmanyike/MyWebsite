@@ -59,6 +59,21 @@ hr{
     background-color: lightgrey;
     text-align: center;
 }
+#about,#pricing{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-u{
+    margin-bottom: 70px;
+    margin-top: 0;
+    color: #1A5276;
+}
+.p-card{
+    border-top: 5px solid #1A5276;
+    margin-bottom: 100px;
+    height: 500px;
+    box-shadow: 2px 5px 10px black;
+}
 /*My portfolio style*/
 .section-two{
     width: auto;
@@ -77,7 +92,7 @@ hr{
     border-top-left-radius: 50px ;
     border-top-right-radius: 50px ;
 }
-.card{
+.my-p-card{
     width: auto;
     height: 500px;
     margin-bottom: 100px;
