@@ -19,9 +19,8 @@ body{
 a{
     color: rgb(0, 0, 0) !important;
 }
-a:hover{
+.a-nav:hover{
     text-decoration: none;
-    color: honeydew;
     background-color: rgb(130, 205, 252) !important;
 }
 .jumbotron{
@@ -135,9 +134,15 @@ hr{
 }
 .enquiry{
     width: auto;
-    height: 500px;
+    height: 100%;
     background-color: black;
     opacity: 0.8;
+    padding: 50px 50px 100px 50px;
+}
+.pngs{
+    width: 50px;
+    height: 50px;
+    margin-right: 35px;
 }
 .copyrights{
     width: auto;
