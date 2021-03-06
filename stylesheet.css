@@ -137,7 +137,10 @@ hr{
     height: 100%;
     background-color: black;
     opacity: 0.8;
-    padding: 50px 50px 100px 50px;
+    padding: 0 50px 100px 50px;
+}
+.chatt, .contacts{
+    padding-top: 50px;
 }
 .pngs{
     width: 50px;
