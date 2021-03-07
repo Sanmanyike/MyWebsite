@@ -32,6 +32,9 @@ a{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.alert{
+    margin-top: 0 !important;
+}
 .profilepic{
     width: 200px;
     height: 200px;
