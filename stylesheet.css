@@ -22,6 +22,7 @@ a{
 .a-nav:hover{
     text-decoration: none;
     background-color: rgb(130, 205, 252) !important;
+    border-radius: 5px;
 }
 .jumbotron{
     width: 100%;
