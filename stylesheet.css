@@ -61,6 +61,11 @@ hr{
     border-radius: 50px;
     border: none;
 }
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 .section-one{
     width: auto;
     height: 100%;
@@ -157,9 +162,6 @@ hr{
     opacity: 1;
 }
 /*sign-in sign-up style*/
-.register{
-    padding: 0;
-}
 .login{
     background-color: lightgrey;
     width: auto;
