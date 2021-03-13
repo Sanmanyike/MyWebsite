@@ -42,6 +42,7 @@ a{
     border-radius: 50%;
     opacity: 1;
     border: 1px solid #1A5276;
+    display: none;
 }
 hr{
     background-color: honeydew;
@@ -79,13 +80,13 @@ hr{
 .about-img{
     width: 200px;
     height: 200px;
-
 }
 .about-card{
     box-shadow: 2px 5px 10px black;
     margin-bottom: 100px;
     align-items: center;
     height: 420px;
+    display: none;
 }
 .heading{
     color: #58595B;
