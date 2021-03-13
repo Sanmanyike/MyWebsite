@@ -10,6 +10,6 @@ $(document).ready(function(){
     //Show about cards and more
     var x = window.scrollTo(0,100);
     $(".about-u").on("click",function(){
-        
+        //alert(x); 
     })
 });
