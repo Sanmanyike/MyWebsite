@@ -34,7 +34,7 @@ a{
     padding-bottom: 50px;
 }
 .alert{
-    margin-top: 0 !important;
+    display: none;
 }
 .profilepic{
     width: 200px;
