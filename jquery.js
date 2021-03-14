@@ -3,13 +3,16 @@ $(document).ready(function(){
     //Show alert box and profile picture
     $(window).on("load",function(){
         $(".alert").show(1000);
+        $(".profilepic").show(1500);
     });
+    //Increase the thickness of jumbotron lines
     $(window).on("load",function(){
-        $(".profilepic").show(2000);
+        $(".jumbotron-hr").animate({height: "50px"},2000)
     });
-    //Show about cards and more
-    var x = window.scrollTo(0,100);
-    $(".about-u").on("click",function(){
-        //alert(x); 
-    })
+    //showing the about and services section
+    if($(window).scrollTop()>960){
+        $(window).on("scroll",function(){
+            $(".about-card").show(1000);
+        });
+    }
 });

@@ -47,11 +47,11 @@ a{
 hr{
     background-color: honeydew;
     opacity: 0.2;
-    height: 5px !important;
     border-radius: 50px;
 }
-.pricing-hr{
+.pricing-hr ,.portfolio-hr{
     background-color: #1A5276;
+    height: 5px !important;
 }
 .align-self-center{
     text-align: center;
@@ -95,6 +95,7 @@ hr{
     margin-bottom: 70px;
     margin-top: 0;
     background-color: #1A5276;
+    height: 5px !important;
 }
 .u-card{
     background-color: lightgrey;
