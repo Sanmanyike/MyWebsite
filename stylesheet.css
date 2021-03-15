@@ -33,6 +33,9 @@ a{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.jumbotron-hr1, .jumbotron-hr2{
+    width: 0;
+}
 .alert{
     display: none;
 }

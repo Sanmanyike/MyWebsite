@@ -7,7 +7,15 @@ $(document).ready(function(){
     });
     //Increase the thickness of jumbotron lines
     $(window).on("load",function(){
-        $(".jumbotron-hr").animate({height: "50px"},2000)
+        $(".jumbotron-hr1").animate({
+            height: "10px",
+            width: "100%"
+        },1000,function(){
+            $(".jumbotron-hr2").animate({
+                height: "10px",
+                width: "100%"
+            },1000);
+        });
     });
     //showing the about and services section
     if($(window).scrollTop()>960){
