@@ -163,9 +163,40 @@ hr{
     background-color: black;
     opacity: 1;
 }
-/*sign-in sign-up style*/
-.login{
+/*Profile style*/
+.blank1{
+    background-color: black;
+    height: 50px;
+}
+.blank2{
     background-color: lightgrey;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.name{
+    height: 100%;
+    border: 1px solid #1A5276;
+}
+.info{
+    background-color: black;
+    height: 100%;
+    margin-bottom: 80px;
+}
+.profile-hr{
+    background-color: #1A5276;
+    height: 5px !important;
+}
+.scale{
     width: auto;
-    height: 600px;
+    border: .5px solid #061c2b;
+    border-radius: 50px;
+}
+.html-bar, .css-bar, .bootstrap-bar, .javascript-bar,
+.jquery-bar, .php-bar, .wordpress-bar, .xml-bar,
+.json-bar, .restapi-bar, .vue-bar, .c-bar
+{
+    background-color: #1A5276;
+    opacity: 0.2;
+    height: 10px;
+    width: 1%;
 }
