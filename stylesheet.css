@@ -76,7 +76,7 @@ hr{
     background-color: lightgrey;
     text-align: center;
 }
-#about,#pricing{
+#about1,#pricing1{
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -89,7 +89,6 @@ hr{
     margin-bottom: 100px;
     align-items: center;
     height: 420px;
-    display: none;
 }
 .heading{
     color: #58595B;
@@ -107,6 +106,9 @@ hr{
     border-top: 5px solid #1A5276;
     margin-bottom: 100px;
     height: 500px;
+    width: 100%;
+}
+.p-card:hover{
     box-shadow: 2px 5px 10px black;
 }
 /*My portfolio style*/

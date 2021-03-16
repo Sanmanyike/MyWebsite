@@ -63,4 +63,26 @@ $(document).ready(function(){
         },2100);
 
     });
+    //Pricing card hover effects
+    $(".p-card").hover(function(){
+        $(this).animate({
+            marginTop: "-=10%",
+            marginLeft: "-=5px",
+        },500);
+    },function(){
+        $(this).animate({
+            marginTop: "+=10%",
+            marginLeft: "+=5px",
+        }),200;
+    });
+    //My portfolio card hover effects
+    $(".my-p-card").hover(function(){
+        $(this).animate({
+            marginTop: "-=10%"
+        },500);
+    },function(){
+        $(this).animate({
+            marginTop: "+=10%"
+        },200);
+    });
 });
