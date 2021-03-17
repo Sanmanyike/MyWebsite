@@ -19,10 +19,22 @@ body{
 a{
     color: rgb(0, 0, 0) !important;
 }
+.navbar{
+    background-color: black !important;
+    opacity: 0.8;
+}
+.navbar a{
+    color: honeydew !important;
+    opacity: 0.7;
+}
 .a-nav:hover{
     text-decoration: none;
     background-color: rgb(130, 205, 252) !important;
+    color: black !important;
     border-radius: 5px;
+}
+.navbar-toggler{
+    background-color: honeydew !important;
 }
 .jumbotron{
     width: 100%;
@@ -106,7 +118,7 @@ hr{
     border-top: 5px solid #1A5276;
     margin-bottom: 100px;
     height: 500px;
-    width: 100%;
+    width: 100% ;
 }
 .p-card:hover{
     box-shadow: 2px 5px 10px black;
@@ -169,23 +181,30 @@ hr{
     opacity: 1;
 }
 /*Profile style*/
-.blank1{
-    background-color: black;
-    height: 50px;
+.profile-background{
+    background-image: url(includes/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.blank2{
+.blank1, .blank3{
+    background-color: black;
+    opacity: 0.7;
+}
+.blank2, .blank4{
     background-color: lightgrey;
     padding-top: 80px;
     padding-bottom: 50px;
 }
 .name{
+    background-color: black;
     height: 100%;
     border: 1px solid #1A5276;
 }
 .info{
     background-color: black;
     height: 100%;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 .profile-hr{
     background-color: #1A5276;
@@ -204,4 +223,11 @@ hr{
     opacity: 0.2;
     height: 10px;
     width: 1%;
+}
+/*Responsive screen view adjustment*/
+@media (max-width: 769px){
+    .blank2{
+        background-color: black;
+        opacity: 0.7;
+    }
 }

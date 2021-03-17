@@ -67,13 +67,13 @@ $(document).ready(function(){
     $(".p-card").hover(function(){
         $(this).animate({
             marginTop: "-=10%",
-            marginLeft: "-=5px",
+            width: "+=10px",
         },500);
     },function(){
         $(this).animate({
             marginTop: "+=10%",
-            marginLeft: "+=5px",
-        }),200;
+            width: "-=10px",
+        }),100;
     });
     //My portfolio card hover effects
     $(".my-p-card").hover(function(){
@@ -83,6 +83,6 @@ $(document).ready(function(){
     },function(){
         $(this).animate({
             marginTop: "+=10%"
-        },200);
+        },100);
     });
 });
