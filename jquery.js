@@ -68,7 +68,7 @@ $(document).ready(function(){
         $(this).animate({
             marginTop: "-=10%",
             width: "+=10px",
-        },500);
+        },300);
     },function(){
         $(this).animate({
             marginTop: "+=10%",
@@ -85,4 +85,22 @@ $(document).ready(function(){
             marginTop: "+=10%"
         },100);
     });
+    //Scrolling to the sub-section page
+    var page_link = window.location.href;
+    var page_id = page_link.subString(page_link.lastIndexOf("#") + 1);
+    if(page_id == "about"){
+        $("html, body").animate({
+            scrollTop: $("#scroll-" + page_id).offset().top
+        },1000);
+    }
+    else if(page_id == "pricing"){
+        $("html, body").animate({
+            scrollTop: $("#scroll-" + page_id).offset().top
+        }, 2000);
+    }
+    else if(page_id == "portfolio"){
+        $("html, body").animate({
+            scrollTop: $("#scroll-" + page_id).offset().top
+        },3000);
+    }
 });

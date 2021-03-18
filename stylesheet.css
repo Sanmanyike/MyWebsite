@@ -21,7 +21,11 @@ a{
 }
 .navbar{
     background-color: black !important;
-    opacity: 0.8;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
 }
 .navbar a{
     color: honeydew !important;
@@ -42,7 +46,7 @@ a{
     margin: 0;
     background-color: black;
     opacity: 0.7;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 .jumbotron-hr1, .jumbotron-hr2{
@@ -69,7 +73,7 @@ hr{
     height: 5px !important;
 }
 .align-self-center{
-    text-align: center;
+    text-align: center !important;
 }
 .btn-info{
     background-color: #1A5276;
@@ -88,7 +92,7 @@ hr{
     background-color: lightgrey;
     text-align: center;
 }
-#about1,#pricing1{
+.about1, .pricing1{
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -121,7 +125,7 @@ hr{
     width: 100% ;
 }
 .p-card:hover{
-    box-shadow: 2px 5px 10px black;
+    box-shadow: 5px 5px 10px black;
 }
 /*My portfolio style*/
 .section-two{
@@ -203,6 +207,7 @@ hr{
 }
 .info{
     background-color: black;
+    opacity: 0.9;
     height: 100%;
     padding-bottom: 80px;
 }
