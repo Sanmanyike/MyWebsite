@@ -104,7 +104,3 @@ $(document).ready(function(){
         },3000);
     }
 });
-//CV printing
-function cv_printing() {
-    window.print();
-}

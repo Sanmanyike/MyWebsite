@@ -14,10 +14,11 @@
     <link rel="shortcut icon" href="includes/Myself.png" type="image/png">
     <title>Manyike San Terence</title>
 </head>
-<body onload="myDownload()">
+<body>
 
   <?php
     //Getting the variables from user input
+    $title = $_POST['title'];
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $job = $_POST['job'];
@@ -52,18 +53,24 @@
     $refphone2 = $_POST['refphone2'];
     $refrel2 = $_POST['refrel2'];
   ?>
-<div  class="container-fluid">
+<div class="container-fluid cv_page">
   <div class="row">
     <div class="col-4 text-center resume_details">
       <div>
+        <h4>Title</h4>
+        <p><?php echo $title ?></p>
+      </div>
+      <div class="pdata">
         <h4>Contacts</h4>
         <p><?php echo $phone ?></p>
         <p><?php echo $email ?></p>
       </div>
       <div class="pdata">
         <h4>Address</h4>
-        <p><?php echo $country." ".$province ?></p>
-        <p><?php echo $city." ".$town ?></p>
+        <p><?php echo $country?></p>
+        <p><?php echo $province ?></p>
+        <p><?php echo $city?></p>
+        <p><?php echo $town ?></p>
         <p><?php echo $code ?></p>
       </div>
       <div class="pdata">
@@ -79,11 +86,7 @@
         <p><?php echo $hskill2 ?></p>
         <p><?php echo $hskill3 ?></p>
       </div>
-      <div class="pdata">
-      <h4>Hobies</h4>
-        <p><?php echo $hobie1 ?></p>
-        <p><?php echo $hobie2 ?></p>
-      </div><br>
+      
     </div>
     <div class="col-8 text-center resume_profile">
       <div>
@@ -95,7 +98,7 @@
         <p><?php echo $about ?></p>
       </div>
       <div class="pdata">
-        <h4>Soft Skills</h4>
+        <h4>Soft Skill</h4>
         <p><?php echo $sskill ?></p>
       </div>
       <div class="pdata">
@@ -105,18 +108,41 @@
         <p><?php echo $yfrom.' - '.$yto ?></p>
       </div>
       <div class="pdata">
-        <div class="pdata">
+        <h4>Responsibilities</h4>
+        <p><?php echo $duties ?></p>
+      </div>
+      <div class="row pdata">
+        <div class="col-12">
+          <h4>Hobies</h4>
+        </div>
+        <div class="col-6">
+          <p><?php echo $hobie1 ?></p>
+        </div>
+        <div class="col-6">
+          <p><?php echo $hobie2 ?></p>
+        </div>
+      </div>
+      <div class="row pdata">
+        <div class="col-12">
           <h4>References</h4>
-          <p><?php echo $refname1 ?></p>
-          <p><?php echo $refphone1 ?></p>
-          <p><?php echo $refrel1 ?></p>
         </div>
-        <div class="pdata">
-          <p><?php echo $refname2 ?></p>
-          <p><?php echo $refphone2 ?></p>
-          <p><?php echo $refrel2 ?></p>
+        <div class="col-6">
+          <div>
+            <p><?php echo $refname1 ?></p>
+            <p><?php echo $refphone1 ?></p>
+            <p><?php echo $refrel1 ?></p>
+          </div>
         </div>
-        <input type="button" onclick="window.print()" class="btn btn-info" value="Download CV">
+        <div class="col-6">
+          <div>
+            <p><?php echo $refname2 ?></p>
+            <p><?php echo $refphone2 ?></p>
+            <p><?php echo $refrel2 ?></p>
+          </div>
+        </div>
+        <div class="col-12">
+          <input type="button" id="cv_download" onclick="cv_print()" class="btn btn-info" value="Download CV">
+        </div>
       </div>
     </div>
   </div>

@@ -52,15 +52,22 @@
       </div>
     </div>
     <div class="project">
-      <form action="Resume_review.php" method="post">
+      <form onsubmit="return word_validate()" action="Resume_review.php" method="post">
         <div class="row">
           <div class="col-12 text-center">
-              <p class="display-5 heading">Create your CV here</p>
+              <p class="display-5 heading">Create a job winning resume for free</p>
               <br><hr><br>
           </div>
           <div class="col-md-3"></div>
           <div class="col-md-3">
             <h4 class="heading">Personal details</h4>
+            <select name="title" class="form-select" aria-label="Default select example">
+              <option selected>Title</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Miss">Miss</option>
+              <option value="Ms.">Ms.</option>
+            </select><br>
             <input type="text" name="name" class="form-control" placeholder="Full Name" required><br>
             <input type="text" name="surname" class="form-control" placeholder="Surname" required><br>
             <input type="text" name="job" class="form-control" placeholder="Profession" required><br>
@@ -79,8 +86,8 @@
           </div>
           <div class="col-md-3">
             <h4 class="heading">Contacts</h4>
-            <input type="text" name="phone" class="form-control" placeholder="Phone" required><br>
-            <input type="text" name="email" class="form-control" placeholder="Email Address" required><br>
+            <input type="text" id="cell" name="phone" class="form-control" placeholder="Phone"><br>
+            <input type="text" id="email" name="email" class="form-control" placeholder="Email Address"><br>
             <h4 class="heading">Address</h4>
             <input type="text" name="country" class="form-control" placeholder="Country" required><br>
             <input type="text" name="province" class="form-control" placeholder="Province" required><br>
@@ -94,9 +101,9 @@
           <div class="col-md-3"></div>
           <div class="col-md-6">
             <h4 class="heading">Profile</h4>
-            <textarea name="about" class="form-control" placeholder="About Yourself" rows="3"></textarea><br>
-            <h4 class="heading">Soft Skills</h4>
-            <textarea name="sskill" class="form-control" placeholder="Explain your soft skills" rows="3"></textarea><br>
+            <textarea id="profile" name="about" class="form-control" placeholder="About Yourself" rows="3"></textarea><br>
+            <h4 class="heading">Soft Skill</h4>
+            <textarea id="sskill" name="sskill" class="form-control" placeholder="Explain your soft skills" rows="3"></textarea><br>
           </div>
           <div class="col-md-3"></div>
         </div>
@@ -128,7 +135,7 @@
           <div class="col-md-3"></div>
           <div class="col-md-6 text-center">
             <h4 class="heading">Duties And Responsibilities</h4>
-            <textarea name="duties" class="form-control" placeholder="Explain your responsibilities carried out from previous job" rows="3"></textarea><br>
+            <textarea id="duties" name="duties" class="form-control" placeholder="Explain your responsibilities carried out from previous job" rows="3"></textarea><br>
             <h4 class="heading">Hobies</h4>
             <div class="row">
               <div class="col-6">
@@ -146,13 +153,13 @@
           <div class="col-md-3">
             <h4 class="heading">Reference 1</h4>
             <input type="text" name="refname1" class="form-control" placeholder="Name" required><br>
-            <input type="text" name="refphone1" class="form-control" placeholder="Phone" required><br>
+            <input type="text" name="refphone1" class="form-control cell" placeholder="Phone" required><br>
             <input type="text" name="refrel1" class="form-control" placeholder="Relationship" required><br>
           </div>
           <div class="col-md-3">
           <h4 class="heading">Reference 2</h4>
           <input type="text" name="refname2" class="form-control" placeholder="Name" required><br>
-          <input type="text" name="refphone2" class="form-control" placeholder="Phone" required><br>
+          <input type="text" name="refphone2" class="form-control cell" placeholder="Phone" required><br>
           <input type="text" name="refrel2" class="form-control" placeholder="Relationship" required><br>
           </div>
           <div class="col-md-3"></div>
@@ -193,18 +200,21 @@
               <div class="heading">
                   <p class="display-4">Contact me</p>
               </div>
-              <form action="">
-                  <div class="mb-3">
-                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
-                  </div>
-                  <div class="mb-3">
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
-                  </div>
-                  <div class="mb-3">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Request" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-info">Send message</button>
-              </form>
+              <form onsubmit="return form_validate()" action="contactform.php" method="POST">
+                <div class="mb-3">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Message subject">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" name="message" placeholder="Enter Your Request" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info">Send message</button>
+            </form>
           </div>
       </div>
       <div class="row copyrights">

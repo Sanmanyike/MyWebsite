@@ -171,7 +171,7 @@
                             <p class="display-4">Hello I'm San Manyike</p>
                             <h3>Full Stack Developer</h3>
                             <p>I'm a designer who care's about your story</p>
-                            <a href="My_projects.php"><button class="btn btn-info">MY PROJECT</button></a>
+                            <a href="Ahmed/index.html"><button class="btn btn-info">MY PROJECT</button></a>
                         </div>
                         <div class="col-md-3 ml-3">
                             <hr class="jumbotron-hr2">
@@ -348,7 +348,7 @@
                             <img class="card-img-top" src="includes/Profile.jpg" alt="About my profile">
                             <div class="card-body">
                                 <p class="card-title"><h5>Profile</h5></p>
-                                <p class="card-text">Lorem ipsum dol numquam excepturi doloremque vel temporibus. Voluptatibus libero laboriosam velit harum alias.</p>
+                                <p class="card-text">I'm a PHP full stack junior developer. I'm a designer who cares about your story.</p>
                                 <a class="btn btn-info card-btn" href="profile.html">More info</a>
                             </div>
                         </div>
@@ -358,7 +358,7 @@
                             <img class="card-img-top" src="includes/Education.jpg" alt="About my education">
                             <div class="card-body">
                                 <p class="card-title"><h5>Education</h5></p>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipi temporibus. Voluptatibus libero laboriosam velit harum alias.</p>
+                                <p class="card-text">Studying abroad gave me the chance to see a side of my major that I have never been exposed to.</p>
                                 <a class="btn btn-info card-btn" href="#">More info</a>
                             </div>
                         </div>
@@ -368,8 +368,8 @@
                             <img class="card-img-top" src="includes/Projects.jpg" alt="About my projects">
                             <div class="card-body">
                                 <p class="card-title"><h5>My project</h5></p>
-                                <p class="card-text">Lorem ipsum dooloremque velvyhg rthrtthryhrrthtr temporibus. Voluptatibus libero laboriosam velit harum alias.</p>
-                                <a class="btn btn-info card-btn" href="My_projects.php">More info</a>
+                                <p class="card-text">Create a resume for free that will stand out using a CV generator built with care.</p>
+                                <a class="btn btn-info card-btn" href="My_projects.html">More info</a>
                             </div>
                         </div>
                     </div>
@@ -402,15 +402,18 @@
                         <div class="heading">
                             <p class="display-4">Contact me</p>
                         </div>
-                        <form action="">
+                        <form onsubmit="return form_validate()" action="contactform.php" method="POST">
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Request" rows="3"></textarea>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Message subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter Your Request" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-info">Send message</button>
                         </form>

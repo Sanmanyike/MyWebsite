@@ -191,18 +191,21 @@
                 <div class="heading">
                     <p class="display-4">Contact me</p>
                 </div>
-                <form action="">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Request" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-info">Send message</button>
-                </form>
+                <form onsubmit="return form_validate()" action="contactform.php" method="POST">
+                  <div class="mb-3">
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name">
+                  </div>
+                  <div class="mb-3">
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Message subject">
+                  </div>
+                  <div class="mb-3">
+                      <textarea class="form-control" id="message" name="message" placeholder="Enter Your Request" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-info">Send message</button>
+              </form>
             </div>
         </div>
         <div class="row copyrights">
